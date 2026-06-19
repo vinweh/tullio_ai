@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tullio AI helps teams turn scattered work into clear, reliable systems."
+    />
+    <title>Tullio AI</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Tullio AI home">
+        <img src="assets/mark.svg" alt="" />
+        <span>Tullio AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Site links">
+        <a href="#approach">Approach</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <div class="signal-field">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Applied AI systems</p>
+          <h1 id="hero-title">Tullio AI</h1>
+          <p>
+            Practical AI strategy, prototypes, and production workflows for teams
+            that need sharper operations without adding noise.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#contact">Start a conversation</a>
+            <a class="button secondary" href="#work">See focus areas</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" aria-label="Overview">
+        <p>
+          This is the content home for Tullio AI: a foundation for positioning,
+          service pages, case studies, and concise product thinking as the site
+          evolves.
+        </p>
+      </section>
+
+      <section class="section" id="approach" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-title">Build the useful thing first.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Map the workflow</h3>
+            <p>
+              Find the handoffs, decisions, and repeated judgment calls where AI
+              can help without forcing a new operating model.
+            </p>
+          </article>
+          <article>
+            <h3>Prototype with real inputs</h3>
+            <p>
+              Move quickly from idea to working artifact using the documents,
+              messages, and data your team already depends on.
+            </p>
+          </article>
+          <article>
+            <h3>Ship with guardrails</h3>
+            <p>
+              Design review loops, permissions, evaluations, and maintenance
+              habits so the system stays trustworthy after launch.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Focus Areas</p>
+          <h2 id="work-title">Where Tullio AI can help</h2>
+        </div>
+        <div class="work-list">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>AI workflow design</h3>
+              <p>Clarify where automation, assistants, and human review belong.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Internal tools</h3>
+              <p>Turn recurring team tasks into focused, durable software.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Content systems</h3>
+              <p>Shape knowledge bases, editorial pipelines, and reusable assets.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Have a workflow worth improving?</h2>
+          <p>
+            Use this placeholder form while the permanent contact route is chosen.
+          </p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            What should Tullio help with?
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send note</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Tullio AI</span>
+      <span>Content scaffold for tullio.ai</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

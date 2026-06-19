@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Tullio AI mark</title>
+  <rect width="64" height="64" rx="14" fill="#173f38"/>
+  <path d="M16 18h32v8H36v22h-8V26H16z" fill="#fffdf6"/>
+  <path d="M43 39c0 6.1-4.9 11-11 11s-11-4.9-11-11h7c0 2.2 1.8 4 4 4s4-1.8 4-4z" fill="#c88a2d"/>
+</svg>
