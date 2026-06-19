@@ -16,6 +16,10 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000/` or `http://127.0.0.1:8000/`.
 
+## Contribution workflow
+
+Never push directly to `main`. For any change, create a short-lived feature branch, make the update there, and open a pull request to merge it into `main` once the work is ready.
+
 ## Architecture
 
 The repository is intentionally simple:
