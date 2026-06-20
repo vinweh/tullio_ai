@@ -26,9 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build static site
+        run: npm run build
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=${{ secrets.CLOUDFLARE_PAGES_PROJECT_NAME || 'tullio-ai' }} --branch=${{ github.head_ref || github.ref_name }}
+          command: pages deploy dist --project-name=${{ secrets.CLOUDFLARE_PAGES_PROJECT_NAME || 'tullio-ai' }} --branch=${{ github.head_ref || github.ref_name }}

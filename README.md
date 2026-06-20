@@ -21,4 +21,6 @@ Then visit `http://localhost:8000/` or `http://127.0.0.1:8000/`.
 
 ## Deployment
 
-This site can be deployed to Cloudflare Pages with Wrangler. The GitHub Actions workflow in `.github/workflows/deploy-cloudflare-pages.yml` deploys pushes to `main` and PRs when the repository has `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, and `CLOUDFLARE_PAGES_PROJECT_NAME` configured as secrets.
+This site can be deployed to Cloudflare Pages with Wrangler. Run `npm run build` to copy deployable static assets into `dist/`, then run `npm run deploy:pages` to deploy with Wrangler.
+
+The GitHub Actions workflow in `.github/workflows/deploy-cloudflare-pages.yml` deploys pushes to `main` and PRs when the repository has `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, and `CLOUDFLARE_PAGES_PROJECT_NAME` configured as secrets.
