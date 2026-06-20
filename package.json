@@ -1,0 +1,12 @@
+{
+  "name": "tullio-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js robots.txt dist/ && cp -R assets dist/assets",
+    "deploy:pages": "npm run build && wrangler pages deploy dist --project-name=tullio-ai"
+  },
+  "devDependencies": {
+    "wrangler": "^4.81.1"
+  }
+}
